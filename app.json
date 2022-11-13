@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Ecofiltro",
+    "icon": "./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "version": "1.0.0",
+    "slug": "ecofiltro",
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.suulcoder.ecofiltro",
+      "versionCode": 1
+    },
+    "ios": {
+      "bundleIdentifier": "com.suulcoder.ecofiltro",
+      "buildNumber": "1.0.0"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "description": ""
+  }
+}

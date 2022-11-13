@@ -1,0 +1,587 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ecofiltro"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:2:3-64
+11-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:2:20-62
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:3:3-75
+12-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:3:20-73
+13    <!-- OPTIONAL PERMISSIONS, REMOVE WHATEVER YOU DO NOT NEED -->
+14    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+14-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:5:3-72
+14-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:5:20-70
+15    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+15-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:6:3-77
+15-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:6:20-75
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:7:3-72
+16-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:7:20-70
+17    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+17-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:8:3-71
+17-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:8:20-69
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:9:3-63
+18-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:9:20-61
+19    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+19-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:10:3-77
+19-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:10:20-75
+20    <!-- These require runtime permissions on M -->
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:12:3-78
+21-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:12:20-76
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:13:3-76
+22-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:13:20-74
+23    <uses-permission android:name="android.permission.CAMERA" />
+23-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:14:3-62
+23-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:14:20-60
+24    <uses-permission android:name="android.permission.READ_CONTACTS" />
+24-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:15:3-69
+24-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:15:20-67
+25    <uses-permission android:name="android.permission.READ_CALENDAR" />
+25-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:16:3-69
+25-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:16:20-67
+26    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+26-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:17:3-70
+26-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:17:20-68
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:18:3-77
+27-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:18:20-75
+28    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+28-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:19:3-68
+28-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:19:20-66
+29    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+29-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:20:3-78
+29-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:20:20-76
+30    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+30-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:21:3-70
+30-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:21:20-68
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[:expo-updates] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-updates\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:5-79
+31-->[:expo-updates] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-updates\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:22-76
+32
+33    <uses-feature
+33-->[com.google.android:cameraview:1.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\ff6a7f5732b745a86e6ee776c621bb9f\jetified-cameraview-1.0.0\AndroidManifest.xml:25:5-27:36
+34        android:name="android.hardware.camera"
+34-->[com.google.android:cameraview:1.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\ff6a7f5732b745a86e6ee776c621bb9f\jetified-cameraview-1.0.0\AndroidManifest.xml:26:9-47
+35        android:required="false" />
+35-->[com.google.android:cameraview:1.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\ff6a7f5732b745a86e6ee776c621bb9f\jetified-cameraview-1.0.0\AndroidManifest.xml:27:9-33
+36    <uses-feature
+36-->[com.google.android:cameraview:1.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\ff6a7f5732b745a86e6ee776c621bb9f\jetified-cameraview-1.0.0\AndroidManifest.xml:28:5-30:36
+37        android:name="android.hardware.camera.autofocus"
+37-->[com.google.android:cameraview:1.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\ff6a7f5732b745a86e6ee776c621bb9f\jetified-cameraview-1.0.0\AndroidManifest.xml:29:9-57
+38        android:required="false" />
+38-->[com.google.android:cameraview:1.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\ff6a7f5732b745a86e6ee776c621bb9f\jetified-cameraview-1.0.0\AndroidManifest.xml:30:9-33
+39
+40    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+40-->[:expo-location] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-85
+40-->[:expo-location] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:22-82
+41    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+41-->[:expo-location] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-77
+41-->[:expo-location] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:22-74
+42    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+42-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:5-81
+42-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:22-78
+43    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+43-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+43-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:22-65
+44    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+44-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+44-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+45
+46    <uses-feature
+46-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a8baaaaec192aa5baa07044f9a540309\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+47        android:glEsVersion="0x00020000"
+47-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a8baaaaec192aa5baa07044f9a540309\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+48        android:required="true" />
+48-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a8baaaaec192aa5baa07044f9a540309\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+49
+50    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+50-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:26:5-110
+50-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
+51    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+51-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
+51-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
+52    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" /> <!-- for android -->
+52-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
+52-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
+53    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+54    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+55    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+56    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+57    <!-- for Samsung -->
+58    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+58-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+58-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+59    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+59-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+59-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+60    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+61    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+61-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+61-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+62    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+62-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+62-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+63    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+63-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+63-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+64    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+64-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+64-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+65    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+65-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+65-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+66    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+67    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+68    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+69    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+70    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+71    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+72    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+72-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+72-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+73    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- END OPTIONAL PERMISSIONS -->
+73-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+73-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\14267a3cf9f3caac871d3ee57ee27aee\ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+74    <application
+74-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:23:3-51:17
+75        android:name="com.ecofiltro.MainApplication"
+75-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:24:5-36
+76        android:allowBackup="false"
+76-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:28:5-32
+77        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+77-->[androidx.core:core:1.2.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\9b7a8697c64c88f7e56591a46ac0bb26\core-1.2.0\AndroidManifest.xml:24:18-86
+78        android:icon="@mipmap/ic_launcher"
+78-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:26:5-39
+79        android:label="@string/app_name"
+79-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:25:5-37
+80        android:roundIcon="@mipmap/ic_launcher_round"
+80-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:27:5-50
+81        android:theme="@style/AppTheme" >
+81-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:29:5-36
+82        <meta-data
+82-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:31:5-124
+83            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+83-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:31:16-67
+84            android:value="https://exp.host/@dianaxime/ecofiltro" />
+84-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:31:68-121
+85        <meta-data
+85-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:32:5-94
+86            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+86-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:32:16-68
+87            android:value="38.0.0" />
+87-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:32:69-91
+88        <meta-data
+88-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:33:5-34:64
+89            android:name="com.google.android.geo.API_KEY"
+89-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:33:16-61
+90            android:value="AIzaSyAs3rWhN5xF8UCHu6gSHZC4wSBdWwSJWTA" />
+90-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:34:7-62
+91        <meta-data
+91-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:35:5-99
+92            android:name="expo.modules.updates.EXPO_RELEASE_CHANNEL"
+92-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:35:16-72
+93            android:value="default" />
+93-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:35:73-96
+94
+95        <activity
+95-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:37:3-49:16
+96            android:name="com.ecofiltro.MainActivity"
+96-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:38:5-33
+97            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+97-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:40:7-84
+98            android:label="@string/app_name"
+98-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:39:7-39
+99            android:launchMode="singleTask"
+99-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:41:7-38
+100            android:theme="@style/Theme.App.SplashScreen"
+100-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:43:7-52
+101            android:windowSoftInputMode="adjustResize" >
+101-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:42:7-49
+102            <intent-filter>
+102-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:45:7-48:23
+103                <action android:name="android.intent.action.MAIN" />
+103-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:46:9-60
+103-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:46:17-58
+104
+105                <category android:name="android.intent.category.LAUNCHER" />
+105-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:47:9-68
+105-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:47:19-66
+106            </intent-filter>
+107        </activity>
+108        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+108-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:50:5-81
+108-->C:\Users\T-Wav\Desktop\Ecofiltro\android\app\src\main\AndroidManifest.xml:50:15-79
+109
+110        <meta-data
+110-->[:unimodules-react-native-adapter] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-14:91
+111            android:name="org.unimodules.core.AppLoader#react-native-headless"
+111-->[:unimodules-react-native-adapter] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-79
+112            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+112-->[:unimodules-react-native-adapter] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-88
+113
+114        <provider
+114-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-20:20
+115            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+115-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-83
+116            android:authorities="com.ecofiltro.fileprovider"
+116-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-64
+117            android:exported="false"
+117-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-37
+118            android:grantUriPermissions="true" >
+118-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-47
+119            <meta-data
+119-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:63
+120                android:name="android.support.FILE_PROVIDER_PATHS"
+120-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-67
+121                android:resource="@xml/file_provider_paths" />
+121-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:17-60
+122        </provider>
+123        <provider
+123-->[:expo-file-system] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:9-26:20
+124            android:name="expo.modules.filesystem.FileSystemFileProvider"
+124-->[:expo-file-system] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:13-74
+125            android:authorities="com.ecofiltro.FileSystemFileProvider"
+125-->[:expo-file-system] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-74
+126            android:exported="false"
+126-->[:expo-file-system] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:13-37
+127            android:grantUriPermissions="true" >
+127-->[:expo-file-system] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:13-47
+128            <meta-data
+128-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:63
+129                android:name="android.support.FILE_PROVIDER_PATHS"
+129-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-67
+130                android:resource="@xml/file_system_provider_paths" />
+130-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:17-60
+131        </provider>
+132
+133        <service
+133-->[:expo-location] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:9-19:40
+134            android:name="expo.modules.location.services.LocationTaskService"
+134-->[:expo-location] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:13-78
+135            android:exported="false" /> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+135-->[:expo-location] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-37
+136        <provider
+136-->[:expo-mail-composer] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-mail-composer\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-22:20
+137            android:name="expo.modules.mailcomposer.MailComposerFileProvider"
+137-->[:expo-mail-composer] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-mail-composer\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-78
+138            android:authorities="com.ecofiltro.MailComposerFileProvider"
+138-->[:expo-mail-composer] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-mail-composer\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-76
+139            android:exported="false"
+139-->[:expo-mail-composer] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-mail-composer\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-37
+140            android:grantUriPermissions="true" >
+140-->[:expo-mail-composer] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-mail-composer\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:13-47
+141            <meta-data
+141-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:63
+142                android:name="android.support.FILE_PROVIDER_PATHS"
+142-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-67
+143                android:resource="@xml/mail_composer_provider_paths" />
+143-->[:react-native-webview] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:17-60
+144        </provider>
+145
+146        <service
+146-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-20:19
+147            android:name="expo.modules.notifications.FirebaseListenerService"
+147-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-78
+148            android:exported="false" >
+148-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-37
+149            <intent-filter android:priority="-1" >
+149-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:29
+149-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:28-49
+150                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+150-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-78
+150-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:25-75
+151            </intent-filter>
+152        </service>
+153        <service
+153-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:9-28:19
+154            android:name="expo.modules.notifications.notifications.service.ExpoNotificationsService"
+154-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:22:13-101
+155            android:exported="false"
+155-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:23:13-37
+156            android:permission="android.permission.BIND_JOB_SERVICE" >
+156-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:24:13-69
+157            <intent-filter android:order="-1" >
+157-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:25:13-27:29
+157-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:25:28-46
+158                <action android:name="expo.modules.notifications.CATEGORY_EVENT" />
+158-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:26:17-84
+158-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:26:25-81
+159            </intent-filter>
+160        </service>
+161
+162        <receiver
+162-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:30:9-40:20
+163            android:name="expo.modules.notifications.notifications.service.ScheduledAlarmReceiver"
+163-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:31:13-99
+164            android:enabled="true"
+164-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:32:13-35
+165            android:exported="false" >
+165-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:33:13-37
+166            <intent-filter>
+166-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:34:13-39:29
+167                <action android:name="expo.modules.notifications.TRIGGER_EVENT" />
+167-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:35:17-83
+167-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:35:25-80
+168                <action android:name="android.intent.action.BOOT_COMPLETED" />
+168-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:36:17-79
+168-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:36:25-76
+169                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+169-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:37:17-82
+169-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:37:25-79
+170                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+170-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:38:17-82
+170-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:38:25-79
+171            </intent-filter>
+172        </receiver>
+173        <receiver
+173-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:41:9-44:40
+174            android:name="expo.modules.notifications.notifications.service.NotificationResponseReceiver"
+174-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-105
+175            android:enabled="true"
+175-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:43:13-35
+176            android:exported="false" />
+176-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:44:13-37
+177        <receiver
+177-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:45:9-48:40
+178            android:name="expo.modules.notifications.notifications.service.TextInputNotificationResponseReceiver"
+178-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:46:13-114
+179            android:enabled="true"
+179-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:47:13-35
+180            android:exported="false" />
+180-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:48:13-37
+181
+182        <meta-data
+182-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:50:9-52:78
+183            android:name="expo.modules.notifications#NotificationsScoper"
+183-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-74
+184            android:value="expo.modules.notifications.NotificationsScoper" />
+184-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-75
+185
+186        <receiver
+186-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+187            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+187-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+188            android:exported="true"
+188-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+189            android:permission="com.google.android.c2dm.permission.SEND" >
+189-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+190            <intent-filter>
+190-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+191                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+191-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:17-81
+191-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:25-78
+192            </intent-filter>
+193        </receiver>
+194        <!--
+195             FirebaseMessagingService performs security checks at runtime,
+196             but set to not exported to explicitly avoid allowing another app to call it.
+197        -->
+198        <service
+198-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+199            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+199-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+200            android:directBootAware="true"
+200-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+201            android:exported="false" >
+201-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+202            <intent-filter android:priority="-500" >
+202-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:29
+202-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:28-49
+203                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+203-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-78
+203-->[:expo-notifications] C:\Users\T-Wav\Desktop\Ecofiltro\node_modules\expo-notifications\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:25-75
+204            </intent-filter>
+205        </service>
+206        <service
+206-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+207            android:name="com.google.firebase.components.ComponentDiscoveryService"
+207-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:50:13-84
+208            android:directBootAware="true"
+208-->[com.google.firebase:firebase-common:20.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a0d1dae9d8dd203c718c04782fc8b9cc\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+209            android:exported="false" >
+209-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+210            <meta-data
+210-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+211                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+211-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+212                android:value="com.google.firebase.components.ComponentRegistrar" />
+212-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\1cbc2d473e5523f4b6ec21b5ed03af74\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+213            <meta-data
+213-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\093d9f68418f22b2448f8122d3722c32\firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+214                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+214-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\093d9f68418f22b2448f8122d3722c32\firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+215                android:value="com.google.firebase.components.ComponentRegistrar" />
+215-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\093d9f68418f22b2448f8122d3722c32\firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+216            <meta-data
+216-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\95ce374b624c574fbb8cee78985862ed\play-services-measurement-api-19.0.0\AndroidManifest.xml:30:13-32:85
+217                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+217-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\95ce374b624c574fbb8cee78985862ed\play-services-measurement-api-19.0.0\AndroidManifest.xml:31:17-139
+218                android:value="com.google.firebase.components.ComponentRegistrar" />
+218-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\95ce374b624c574fbb8cee78985862ed\play-services-measurement-api-19.0.0\AndroidManifest.xml:32:17-82
+219            <meta-data
+219-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\3a70a7387e023e4a2baed47e9c236d75\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+220                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+220-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\3a70a7387e023e4a2baed47e9c236d75\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+221                android:value="com.google.firebase.components.ComponentRegistrar" />
+221-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\3a70a7387e023e4a2baed47e9c236d75\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+222        </service>
+223        <service
+223-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\d502274c1a05a1fcb6d7e51a743b4ab7\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+224            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+224-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\d502274c1a05a1fcb6d7e51a743b4ab7\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+225            android:exported="false" >
+225-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\d502274c1a05a1fcb6d7e51a743b4ab7\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+226            <meta-data
+226-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\d502274c1a05a1fcb6d7e51a743b4ab7\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+227                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+227-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\d502274c1a05a1fcb6d7e51a743b4ab7\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+228                android:value="cct" />
+228-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\d502274c1a05a1fcb6d7e51a743b4ab7\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+229        </service>
+230
+231        <provider
+231-->[com.google.firebase:firebase-common:20.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a0d1dae9d8dd203c718c04782fc8b9cc\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+232            android:name="com.google.firebase.provider.FirebaseInitProvider"
+232-->[com.google.firebase:firebase-common:20.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a0d1dae9d8dd203c718c04782fc8b9cc\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+233            android:authorities="com.ecofiltro.firebaseinitprovider"
+233-->[com.google.firebase:firebase-common:20.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a0d1dae9d8dd203c718c04782fc8b9cc\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+234            android:directBootAware="true"
+234-->[com.google.firebase:firebase-common:20.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a0d1dae9d8dd203c718c04782fc8b9cc\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+235            android:exported="false"
+235-->[com.google.firebase:firebase-common:20.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a0d1dae9d8dd203c718c04782fc8b9cc\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+236            android:initOrder="100" />
+236-->[com.google.firebase:firebase-common:20.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a0d1dae9d8dd203c718c04782fc8b9cc\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+237
+238        <service
+238-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\dc8c37dbadd14e8189c4dee606548816\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+239            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+239-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\dc8c37dbadd14e8189c4dee606548816\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+240            android:exported="false"
+240-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\dc8c37dbadd14e8189c4dee606548816\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+241            android:permission="android.permission.BIND_JOB_SERVICE" >
+241-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\dc8c37dbadd14e8189c4dee606548816\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+242        </service>
+243
+244        <receiver
+244-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\dc8c37dbadd14e8189c4dee606548816\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+245            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+245-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\dc8c37dbadd14e8189c4dee606548816\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+246            android:exported="false" />
+246-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\dc8c37dbadd14e8189c4dee606548816\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+247
+248        <service
+248-->[androidx.room:room-runtime:2.1.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\9ff8af5c879551794a4eef19a23c23a0\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+249            android:name="androidx.room.MultiInstanceInvalidationService"
+249-->[androidx.room:room-runtime:2.1.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\9ff8af5c879551794a4eef19a23c23a0\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+250            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+250-->[androidx.room:room-runtime:2.1.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\9ff8af5c879551794a4eef19a23c23a0\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+251        <uses-library
+251-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a8baaaaec192aa5baa07044f9a540309\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+252            android:name="org.apache.http.legacy"
+252-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a8baaaaec192aa5baa07044f9a540309\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+253            android:required="false" />
+253-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\a8baaaaec192aa5baa07044f9a540309\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+254
+255        <activity
+255-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46eaef16d6aa7da10044d9b92a634d84\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+256            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+256-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46eaef16d6aa7da10044d9b92a634d84\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+257            android:exported="false"
+257-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46eaef16d6aa7da10044d9b92a634d84\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+258            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+258-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46eaef16d6aa7da10044d9b92a634d84\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+259
+260        <receiver
+260-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:29:9-33:20
+261            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+261-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:30:13-85
+262            android:enabled="true"
+262-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:31:13-35
+263            android:exported="false" >
+263-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:32:13-37
+264        </receiver>
+265
+266        <service
+266-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:35:9-38:40
+267            android:name="com.google.android.gms.measurement.AppMeasurementService"
+267-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:36:13-84
+268            android:enabled="true"
+268-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:37:13-35
+269            android:exported="false" />
+269-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:38:13-37
+270        <service
+270-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:39:9-43:72
+271            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+271-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:40:13-87
+272            android:enabled="true"
+272-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:41:13-35
+273            android:exported="false"
+273-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:42:13-37
+274            android:permission="android.permission.BIND_JOB_SERVICE" />
+274-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\24d95bdbdb4028e60523d050669b65c7\play-services-measurement-19.0.0\AndroidManifest.xml:43:13-69
+275
+276        <meta-data
+276-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\4b206ef363ba7b59d272ddd83de561cf\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+277            android:name="com.google.android.gms.version"
+277-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\4b206ef363ba7b59d272ddd83de561cf\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+278            android:value="@integer/google_play_services_version" />
+278-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\4b206ef363ba7b59d272ddd83de561cf\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+279
+280        <provider
+280-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46e632c950ffbd7b4f7c964c8d273634\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+281            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+281-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46e632c950ffbd7b4f7c964c8d273634\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+282            android:authorities="com.ecofiltro.lifecycle-process"
+282-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46e632c950ffbd7b4f7c964c8d273634\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+283            android:exported="false"
+283-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46e632c950ffbd7b4f7c964c8d273634\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+284            android:multiprocess="true" />
+284-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\46e632c950ffbd7b4f7c964c8d273634\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+285
+286        <service
+286-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+287            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+287-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+288            android:exported="false" />
+288-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+289        <service
+289-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+290            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+290-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+291            android:exported="false" />
+291-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+292        <service
+292-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+293            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+293-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+294            android:exported="false" />
+294-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\T-Wav\.gradle\caches\transforms-2\files-2.1\43c9fe2b9204aeca202f2e742b9e41ea\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+295    </application>
+296
+297</manifest>

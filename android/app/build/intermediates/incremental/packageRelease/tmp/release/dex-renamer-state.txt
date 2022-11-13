@@ -1,0 +1,7 @@
+#Sun Oct 30 03:02:21 MST 2022
+base.0=C\:\\Users\\T-Wav\\Desktop\\Ecofiltro\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\T-Wav\\Desktop\\Ecofiltro\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes2.dex

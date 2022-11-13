@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "373521836291",
+    "project_id": "ecofiltrowaterapp",
+    "storage_bucket": "ecofiltrowaterapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373521836291:android:b689b7a857f0e8a066e136",
+        "android_client_info": {
+          "package_name": "com.ecofiltro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373521836291-ruceq0gs741fmk4g835rmmk88ommb04p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB94DIOFTMEWZke3NmeGwpxst0FdGdkyMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373521836291-ruceq0gs741fmk4g835rmmk88ommb04p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
