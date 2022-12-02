@@ -1,6 +1,6 @@
 # EcofiltroMobileApp
 
-This repository holds the mobile application code of the Ecofiltro app. This app provides information on water safety and allows users to upload pictures to a server to be classified as dirty or clean.
+This repository holds the mobile application code of the Ecofiltro app. This app provides information on water safety and allows users to upload pictures of water to a server to be classified as dirty or clean by a machine learning model.
 
 The latest stable version was made in Android. To run the mobile app do the following:
 
