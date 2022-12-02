@@ -2,9 +2,9 @@
 <resources>
     <string name="default_web_client_id" translatable="false">373521836291-ruceq0gs741fmk4g835rmmk88ommb04p.apps.googleusercontent.com</string>
     <string name="gcm_defaultSenderId" translatable="false">373521836291</string>
-    <string name="google_api_key" translatable="false">AIzaSyB94DIOFTMEWZke3NmeGwpxst0FdGdkyMs</string>
+    <string name="google_api_key" translatable="false">xxxx</string>
     <string name="google_app_id" translatable="false">1:373521836291:android:b689b7a857f0e8a066e136</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB94DIOFTMEWZke3NmeGwpxst0FdGdkyMs</string>
+    <string name="google_crash_reporting_api_key" translatable="false">xxxxx</string>
     <string name="google_storage_bucket" translatable="false">ecofiltrowaterapp.appspot.com</string>
     <string name="project_id" translatable="false">ecofiltrowaterapp</string>
 </resources>
