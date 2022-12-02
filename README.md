@@ -3,7 +3,7 @@
 This repository holds the mobile application code of the Ecofiltro app. This app provides information on water safety and allows users to upload pictures to a server to be classified as dirty or clean.
 
 To run the mobile app do the following:
-    -Open android studio.
+-Open android studio.
 -Connect your android device via usb or emulator.. 
 -Open the terminal, and navigate to the projects root directory.
 -Verify React-Native 0.63.3 is installed since the app runs on React-Native
