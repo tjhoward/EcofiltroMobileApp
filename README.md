@@ -24,4 +24,11 @@ To send requests to the server:
 
 - Make a POST request to "https://flaskcontainer-ymlclai44q-uw.a.run.app/image" with base64 image data.
 - The request is processed in the app.py file, which resides within a docker environment.
+
+To update the server with new changes:
+
+- Download the Google Cloud SDK at https://cloud.google.com/sdk
+- Follow the instructions to setup your Google Cloud environment: https://cloud.google.com/sdk/docs/install-sdk 
+- Run the command "gcloud builds submit --tag gcr.io/ecofiltrowaterapp/flaskcontainer;" within the root of your project directory 
+- Run the command "gcloud run deploy --image gcr.io/ecofiltrowaterapp/flaskcontainer;" within the root of your project directory  
  
