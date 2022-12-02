@@ -16,3 +16,4 @@ The server/src folder holds the server component of the app. The app runs the ma
 To send requests to the server:
     -Make a POST request to "https://flaskcontainer-ymlclai44q-uw.a.run.app/image"
      with base64 image data in a header of any key name.
+ 
