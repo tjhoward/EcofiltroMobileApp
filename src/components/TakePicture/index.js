@@ -27,7 +27,9 @@ const TakePicture = () => {
   }, [])
   const __takePicture = async () => {
     if (!camera) return
-    const photo = await camera.takePictureAsync();
+
+    const options = { quality: 0.3, base64: true, scale: 0.5 };
+    const photo = await camera.takePictureAsync(options);
     const source = photo.uri;
     if (source) {
       Actions.Processing();

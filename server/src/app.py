@@ -19,6 +19,8 @@ import cv2
 import sklearn
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.model_selection import GridSearchCV
+from sklearn .metrics import roc_auc_score
+import scikitplot as skplt #
 import xgboost as xgb
 from xgboost import XGBClassifier
 from keras.models import load_model
@@ -348,9 +350,11 @@ def load_images_from_folder(folder, resize=True, expand = False):
 
 def classifyImage():
 
+    threshold = 0.8778 #default threshold from auc roc curve on our sample data
+                        #TODO use real-time evalation for threshold
+                      
     xgb_model_latest = xgb.XGBClassifier()
     xgb_model_latest._le = LabelEncoder().fit(['0', '1'])
-    #xgb_model_latest = pickle.load(open('/app/modelXGBoost.h5', 'rb')) #Load model
     xgb_model_latest.load_model('/app/modelXGBoost.h5') #Load model
 
     image_file = '/app/inputImage.jpg'
@@ -363,10 +367,8 @@ def classifyImage():
     lengthCrop = str(len(Crops))
 
 
-    #upload_blob_from_memory("ecofiltro-bucket",lengthCrop, "apple")
-
-    if len(Crops_Extracted) == 0:
-      return ["0.90", "0.15"]
+    if len(Crops_Extracted) == 0: #return inconclusive in case of no blobs
+      return ["0.00", "0.00"] 
 
     images2 = np.array(Crops_Extracted).astype('float32')
 
@@ -384,7 +386,19 @@ def classifyImage():
 
     predict =  xgb_model_latest.predict_proba(X_test_features2)
 
-    return predict
+    return predict, threshold
+    #get real-time threshold using auc roc
+    # probabilities = []
+    # for p in predict:
+    #   probabilities.append(p[1])
+    
+    # auc = np.round(roc_auc_score(predict, probabilities), 4)
+    # prb = []
+    # for p in probabilities:
+    #   prb.append(p)
+    # skplt.metrics.plot_roc_curve(predict,predict)
+
+
 
 
 @app.route('/image', methods=['POST'])
@@ -396,23 +410,20 @@ def image():
     with open('/app/inputImage.jpg', 'wb') as out: #write image to container directory
       out.write(bytesOfImage)
 
-    pred_result = classifyImage()    
+    pred_result, threshold = classifyImage()    
 
     allClean = True #
     result = ""
-    threshold = 0.9
 
-    try:
-      for pred in pred_result:
-        if float(str(pred[0])) >= threshold:
-          result = 'Dirty'
-          allClean = False
-          break
-        elif float(str(pred[1])) < threshold:
-          result = 'Inconclusive'
-          allClean = False
-    except:
-      return {"Prediction" : ["0.10","0.90"]}
+    for pred in pred_result:
+      if float(str(pred[0])) >= threshold:
+        result = 'Dirty'
+        allClean = False
+        break
+      elif float(str(pred[1])) < threshold:
+        result = 'Inconclusive'
+        allClean = False
+
 
     if allClean == True:
       result = 'Clean'   
@@ -425,16 +436,10 @@ def image():
       r[0].append(0)
       r[0].append(0.9)
     else:
-      r[0].append(0.8)
-      r[0].append(0.8)
+      r[0].append(0.0)
+      r[0].append(0.0)
 
     return {"Prediction" : [str(r[0][0]),str(r[0][1])]}
-
-    #upload_blob_from_memory("ecofiltro-bucket","finished no errors", "prediction")
-    #return {"Prediction" : result}
-    #upload_blob("ecofiltro-bucket", r'/app/inputImage.jpg', "testTULT") debugging images
-    #return {"Prediction" : ["0.90","0.10"]}
-     # return {"Prediction" : [str(r[0][0]),str(r[0][1])]}
 
 
 if __name__ == '__main__':
