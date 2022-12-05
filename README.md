@@ -31,4 +31,13 @@ To update the server with new changes:
 - Follow the instructions to setup your Google Cloud environment: https://cloud.google.com/sdk/docs/install-sdk 
 - Run the command "gcloud builds submit --tag gcr.io/ecofiltrowaterapp/flaskcontainer;" within the root of your project directory 
 - Run the command "gcloud run deploy --image gcr.io/ecofiltrowaterapp/flaskcontainer;" within the root of your project directory  
+
+The server uses a XGBoost model for classifying images. The file for the model is located at  server/src/app/modelXGBoost.h5. After a POST request is made the following occurs within the app.py file:
+ - The base64 image data is converted to a jpg image in the image() method.
+ - The classifyImage() method is called, which is where we will feed the image into the model.
+ - The cropBlobs() method is called to generate blob crops from the image.
+ - The model analyzes the blob crops and returns a prediction on whether the image contains bacteria or not.
+ - The prediction is returned as a JSON object to the mobile app, and a result screen is displayed to the user.
+ 
+
  
